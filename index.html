@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Precious Madamji</title>
+    <style>
+        /* Warm, romantic gradient background matching a Joba flower's colors */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(-45deg, #1a0005, #75001c, #b3002d, #ff1a4a);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            overflow: hidden;
+            color: white;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Glassmorphism Card Design */
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 50px 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            max-width: 480px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 2.3em;
+            color: #ffe6eb;
+            margin-bottom: 20px;
+            font-style: italic;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        p {
+            font-size: 1.3em;
+            line-height: 1.6;
+            margin: 10px 0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #ffb3c6;
+            font-size: 1.5em;
+            margin-top: 25px;
+            display: block;
+        }
+        
+        /* Floating Joba Flower SVG */
+        .flower-container {
+            margin-top: 30px;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .joba-svg {
+            width: 90px;
+            height: 90px;
+            filter: drop-shadow(0px 5px 10px rgba(0,0,0,0.5));
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Dear Precious Madamji,</h1>
+        <p>You are someone special in my life.</p>
+        <p>Wallahi after my ammu you are my everything, my happiness.</p>
+        <span class="highlight">You are one and only my Joba 🌺</span>
+        
+        <div class="flower-container">
+            <svg class="joba-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 50 C 30 10, 10 30, 50 50" fill="#ff1a4a"/>
+                <path d="M50 50 C 70 10, 90 30, 50 50" fill="#d90036"/>
+                <path d="M50 50 C 10 70, 30 90, 50 50" fill="#e60039"/>
+                <path d="M50 50 C 90 70, 70 90, 50 50" fill="#cc002d"/>
+                <path d="M50 50 C 10 50, 50 10, 50 50" fill="#ff335c"/>
+                <path d="M50 50 C 90 50, 50 10, 50 50" fill="#b30027"/>
+                
+                <path d="M50 50 Q 55 20 75 15" fill="none" stroke="#ffcc00" stroke-width="3" stroke-linecap="round"/>
+                
+                <circle cx="75" cy="15" r="2" fill="#ffcc00"/>
+                <circle cx="70" cy="18" r="1.5" fill="#ffcc00"/>
+                <circle cx="73" cy="22" r="1.5" fill="#ffcc00"/>
+                <circle cx="68" cy="25" r="1.5" fill="#ffcc00"/>
+                
+                <circle cx="50" cy="50" r="4" fill="#660017"/>
+            </svg>
+        </div>
+    </div>
+
+</body>
+</html>
+3:33 am
